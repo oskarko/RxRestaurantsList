@@ -15,6 +15,9 @@
 		E25FB1D22507FA2C00653C5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E25FB1D12507FA2C00653C5C /* Assets.xcassets */; };
 		E25FB1D52507FA2C00653C5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E25FB1D32507FA2C00653C5C /* LaunchScreen.storyboard */; };
 		E25FB1DD2507FCC400653C5C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25FB1DC2507FCC400653C5C /* AppCoordinator.swift */; };
+		E25FB1DF2507FFEA00653C5C /* Restaurants.json in Resources */ = {isa = PBXBuildFile; fileRef = E25FB1DE2507FFEA00653C5C /* Restaurants.json */; };
+		E25FB1E1250800F200653C5C /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25FB1E0250800F200653C5C /* Restaurant.swift */; };
+		E25FB1E32508017700653C5C /* ManagerServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25FB1E22508017700653C5C /* ManagerServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		E25FB1D42507FA2C00653C5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E25FB1D62507FA2C00653C5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E25FB1DC2507FCC400653C5C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		E25FB1DE2507FFEA00653C5C /* Restaurants.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Restaurants.json; sourceTree = "<group>"; };
+		E25FB1E0250800F200653C5C /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		E25FB1E22508017700653C5C /* ManagerServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerServices.swift; sourceTree = "<group>"; };
 		F1D34AC377BF0DB2F5F5953D /* Pods-RxRestaurantsList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxRestaurantsList.release.xcconfig"; path = "Target Support Files/Pods-RxRestaurantsList/Pods-RxRestaurantsList.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +96,9 @@
 				E25FB1D32507FA2C00653C5C /* LaunchScreen.storyboard */,
 				E25FB1D62507FA2C00653C5C /* Info.plist */,
 				E25FB1DC2507FCC400653C5C /* AppCoordinator.swift */,
+				E25FB1DE2507FFEA00653C5C /* Restaurants.json */,
+				E25FB1E0250800F200653C5C /* Restaurant.swift */,
+				E25FB1E22508017700653C5C /* ManagerServices.swift */,
 			);
 			path = RxRestaurantsList;
 			sourceTree = "<group>";
@@ -154,6 +163,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E25FB1DF2507FFEA00653C5C /* Restaurants.json in Resources */,
 				E25FB1D52507FA2C00653C5C /* LaunchScreen.storyboard in Resources */,
 				E25FB1D22507FA2C00653C5C /* Assets.xcassets in Resources */,
 				E25FB1D02507FA2B00653C5C /* Main.storyboard in Resources */,
@@ -209,8 +219,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E25FB1E1250800F200653C5C /* Restaurant.swift in Sources */,
 				E25FB1DD2507FCC400653C5C /* AppCoordinator.swift in Sources */,
 				E25FB1CD2507FA2B00653C5C /* ViewController.swift in Sources */,
+				E25FB1E32508017700653C5C /* ManagerServices.swift in Sources */,
 				E25FB1C92507FA2B00653C5C /* AppDelegate.swift in Sources */,
 				E25FB1CB2507FA2B00653C5C /* SceneDelegate.swift in Sources */,
 			);
