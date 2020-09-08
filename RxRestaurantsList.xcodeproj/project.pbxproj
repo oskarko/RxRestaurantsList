@@ -75,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				E25FB1C72507FA2B00653C5C /* RxRestaurantsList */,
+				E25FB1E825080E5900653C5C /* Network Manager */,
 				E25FB1C62507FA2B00653C5C /* Products */,
 				A6360869C8E056D7D665B5F7 /* Pods */,
 				29737E32B73C2EB68B1CFB50 /* Frameworks */,
@@ -92,21 +93,68 @@
 		E25FB1C72507FA2B00653C5C /* RxRestaurantsList */ = {
 			isa = PBXGroup;
 			children = (
+				E25FB1ED25080ED000653C5C /* Coordinator */,
+				E25FB1EC25080EAD00653C5C /* Model */,
+				E25FB1EB25080EA300653C5C /* View */,
+				E25FB1EA25080E9C00653C5C /* ViewModel */,
+				E25FB1E925080E8600653C5C /* Resources */,
 				E25FB1C82507FA2B00653C5C /* AppDelegate.swift */,
 				E25FB1CA2507FA2B00653C5C /* SceneDelegate.swift */,
-				E25FB1CC2507FA2B00653C5C /* ViewController.swift */,
-				E25FB1CE2507FA2B00653C5C /* Main.storyboard */,
 				E25FB1D12507FA2C00653C5C /* Assets.xcassets */,
 				E25FB1D32507FA2C00653C5C /* LaunchScreen.storyboard */,
 				E25FB1D62507FA2C00653C5C /* Info.plist */,
-				E25FB1DC2507FCC400653C5C /* AppCoordinator.swift */,
-				E25FB1DE2507FFEA00653C5C /* Restaurants.json */,
-				E25FB1E0250800F200653C5C /* Restaurant.swift */,
+			);
+			path = RxRestaurantsList;
+			sourceTree = "<group>";
+		};
+		E25FB1E825080E5900653C5C /* Network Manager */ = {
+			isa = PBXGroup;
+			children = (
 				E25FB1E22508017700653C5C /* ManagerServices.swift */,
+			);
+			path = "Network Manager";
+			sourceTree = "<group>";
+		};
+		E25FB1E925080E8600653C5C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E25FB1DE2507FFEA00653C5C /* Restaurants.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E25FB1EA25080E9C00653C5C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
 				E25FB1E42508058D00653C5C /* ViewModel.swift */,
 				E25FB1E6250806CD00653C5C /* RestaurantViewModel.swift */,
 			);
-			path = RxRestaurantsList;
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E25FB1EB25080EA300653C5C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E25FB1CC2507FA2B00653C5C /* ViewController.swift */,
+				E25FB1CE2507FA2B00653C5C /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E25FB1EC25080EAD00653C5C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E25FB1E0250800F200653C5C /* Restaurant.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E25FB1ED25080ED000653C5C /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E25FB1DC2507FCC400653C5C /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
