@@ -1,0 +1,6 @@
+framework module Pods_RxRestaurantsList {
+  umbrella header "Pods-RxRestaurantsList-umbrella.h"
+
+  export *
+  module * { export * }
+}
