@@ -8,14 +8,18 @@
 
 import UIKit
 import RxSwift
+import RxCocoa
 
 class ViewController: UIViewController {
 
     private var disposeBag = DisposeBag()
+    private var viewModel: ViewModel!
+    @IBOutlet private weak var tableView: UITableView!
 
-    static func instantiate() -> UIViewController {
+    static func instantiate(viewModel: ViewModel) -> UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: .main)
         let viewController = storyboard.instantiateInitialViewController() as! ViewController
+        viewController.viewModel = viewModel
 
         return viewController
     }
@@ -23,13 +27,19 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let managerServices = ManagerServices()
-        managerServices.fetchRestaurants().subscribe(
-            onNext: { restaurants in
-                print(restaurants)
-        }, onError: { error in
-            print(error)
-        }).disposed(by: disposeBag)
+        navigationItem.title = viewModel.title
+        navigationController?.navigationBar.prefersLargeTitles = true
+
+        tableView.contentInsetAdjustmentBehavior = .never
+        tableView.tableFooterView = UIView()
+
+        viewModel
+            .fetchRestaurantsViewModels().observeOn(MainScheduler.instance)
+            .bind(to: tableView.rx.items(cellIdentifier: "cell")) { index, viewModel, cell in
+
+                cell.textLabel?.text = viewModel.displayText
+                
+        }.disposed(by: disposeBag)
     }
 }
 

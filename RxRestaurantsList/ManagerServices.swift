@@ -9,7 +9,11 @@
 import Foundation
 import RxSwift
 
-class ManagerServices {
+protocol ManagerServicesProtocol {
+    func fetchRestaurants() -> Observable<[Restaurant]>
+}
+
+class ManagerServices: ManagerServicesProtocol {
 
     func fetchRestaurants() -> Observable<[Restaurant]> {
 
